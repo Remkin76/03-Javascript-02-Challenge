@@ -8,10 +8,9 @@ generateBtn.addEventListener("click", writePassword);
 // Function to generate and display the password
 function writePassword() {
   var password = generatePassword();
-  passwordText.value = password;
   var passwordText = document.querySelector("#password");
+  passwordText.value = password;  
 }
-
 
 // Generate password based on selected criteria
 function generatePassword() {

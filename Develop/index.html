@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
+  <!-- the header of the webpage which is not shown to the user and details settings-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- this is the title that shows in the web browser-->
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- this it the main displayed section which is the viewable part of the page-->
     <div class="wrapper">
       <header>
+        <!-- a simple header displayed on the page-->
         <h1>Password Generator</h1>
       </header>
+      <!-- shows the next section as a card -->
       <div class="card">
+        <!-- this is the header of the card-->
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+        <!-- this is where the final generated password will be displayed-->
         <div class="card-body">
           <textarea
             readonly
@@ -23,6 +32,7 @@
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
+          <!--This is where the button to generate the password sits-->
         </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
