@@ -1,9 +1,11 @@
+/* Sets global setting to ensure page is displayed correct on all browsers*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Ensures majot page elements sit with no margin at full page height */
 html,
 body,
 .wrapper {
@@ -12,24 +14,28 @@ body,
   padding: 0;
 }
 
+/* Sets the font type and background colour of the page */
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #3d0678;
 }
 
+/* Sets the main page section styling */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+/* Simple styilng for the header */
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color:antiquewhite;
 }
 
+/* Sets the styling for the card is where the main elements of the page sit */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -42,39 +48,39 @@ header {
   padding: 30px 40px;
 }
 
+/* A simple top border styling for the card */
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #0e3051;
   height: 2px;
 }
 
+/* Sets the height of the card body */
 .card-body {
   min-height: 100px;
 }
 
+/* Enures the Generate Password buttong sits central in the card */
 .card-footer {
   text-align: center;
 }
 
+
+/* A simple bottom border styling for the card */
 .card-footer::before {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #0e3051;
   height: 2px;
 }
 
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
+/* Sets the styling for the button itself */
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: red;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -88,20 +94,11 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
-}
-
-.float-right {
-  float: right;
-}
-
+/* Sets the styling of the box where the password is displayed */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: none;
   display: block;
   width: 100%;
   padding-top: 15px;
@@ -118,6 +115,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Media queries */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
